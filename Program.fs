@@ -1,10 +1,18 @@
 ﻿// For more information see https://aka.ms/fsharp-console-apps
 open GetInput
-open Day1
 
 printfn "Hello from F#"
 
 
-GetInput 1 true |> Day1Run1
-GetInput 1 false |> Day1Run1
-GetInput 1 false |> Day1Run2
+
+//GetInput 1 true |> Day1.Day1Run1
+//GetInput 1 false |> Day1.Day1Run1
+//GetInput 1 false |> Day1.Day1Run2
+
+//GetInput 2 true |> Day2.Day2Run1
+//GetInput 2 false |> Day2.Day2Run1
+//GetInput 2 false |> Day2.Day2Run2
+
+//GetInput 3 true |> Day3.Day3Run1
+//GetInput 3 false |> Day3.Day3Run1
+//GetInput 3 false |> Day3.Day3Run2
