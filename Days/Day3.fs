@@ -1,13 +1,9 @@
 module Day3
 
-//  vJrwpWtwJgWr hcsFMMfFFhFp
-//    Lowercase item types a through z have priorities 1 through 26.
-//    Uppercase item types A through Z have priorities 27 through 52.
 
 let findDuplicate ys x = Array.tryFind (fun y -> x = y) ys
 
 let parseInput (line: string) =
-
     let charArr = line.ToCharArray()
     let firstPart = charArr.[..((line.Length / 2) - 1)]
     let secondPart = charArr.[((line.Length / 2))..]
