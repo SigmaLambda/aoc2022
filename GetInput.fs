@@ -1,6 +1,6 @@
 module GetInput
 
-let GetInput (dayNumber: int) (isTest: bool) : string list =
+let GetInputAsLines (dayNumber: int) (isTest: bool) : string list =
     if isTest then
         $".//Inputs//testDay{(string dayNumber)}.txt"
         |> System.IO.File.ReadAllLines
@@ -10,3 +10,13 @@ let GetInput (dayNumber: int) (isTest: bool) : string list =
         $".//Inputs//Day{(string dayNumber)}.txt"
         |> System.IO.File.ReadAllLines
         |> Array.toList
+
+
+
+let GetInputAsString (dayNumber: int) (isTest: bool) : string =
+    if isTest then
+        $".//Inputs//testDay{(string dayNumber)}.txt"
+        |> System.IO.File.ReadAllText
+    else
+        $".//Inputs//Day{(string dayNumber)}.txt"
+        |> System.IO.File.ReadAllText
