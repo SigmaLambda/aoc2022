@@ -3,9 +3,19 @@ open GetInput
 
 printfn "Hello from F#"
 
+let test7 = GetInputAsLines 7 true
+day7y.GetStructure test7 "" 0 List.empty |> ignore
+
+//GetInputAsString 6 false |> Day6.Run1
+//GetInputAsString 6 false |> Day6.Run2
+
 //GetInput 6 true |> Day6.Run1Test
-GetInputAsString 6 false |> Day6.Run1
-GetInputAsString 6 false |> Day6.Run2
+//GetInputAsString 6 false |> Day6.Run1
+//GetInputAsString 6 false |> Day6.Run2
+
+//GetInput 6 true |> Day6.Run1Test
+//GetInputAsString 6 false |> Day6.Run1
+//GetInputAsString 6 false |> Day6.Run2
 
 //GetInputAsLines 5 true |> Day5.Run1Test
 //GetInputAsLines 5 false |> Day5.Run1 //cannot run at same time part 2.
